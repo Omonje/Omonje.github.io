@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blessing Omonjeva | Automation Systems Engineer</title>
+  <meta name="description" content="Automation and integration engineer in Lagos, working US business hours. n8n, Zapier, Python, PostgreSQL and Claude, with monitoring built into every system.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blessing Omonjeva | Automation Systems Engineer">
+  <meta property="og:description" content="I connect CRMs, APIs and internal tools, then build the alerts that tell you the moment one stops working.">
+  <meta property="og:image" content="https://omonje.github.io/img/profile.jpg">
+  <meta property="og:url" content="https://omonje.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="img/profile.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Blessing Omonjeva</a>
+      <nav aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#how">How I work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Automation Systems Engineer · Lagos, Nigeria · US business hours</p>
+          <h1>I connect your CRMs, APIs and internal tools, then build the alerts that tell you the moment one stops working.</h1>
+          <p class="lede">Ten months as the automation builder at a US automation agency: about 20 workflows a month across n8n and Zapier, with daily production support.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="#projects">See the projects</a>
+            <a class="btn" href="https://www.linkedin.com/in/blessing-omonjeva-workflow-automation-specialist-work/">LinkedIn</a>
+            <a class="btn" href="https://github.com/Omonje">GitHub</a>
+            <a class="btn" href="https://www.upwork.com/freelancers/~0133747375c38975ec">Upwork</a>
+          </div>
+        </div>
+        <img class="portrait" src="img/profile.jpg" width="320" height="320" alt="Portrait of Blessing Omonjeva">
+      </div>
+      <div class="wrap">
+        <ul class="stats">
+          <li><strong>10 months</strong><span>at a US automation agency</span></li>
+          <li><strong>About 20</strong><span>workflows shipped each month</span></li>
+          <li><strong>Top Rated Plus</strong><span>on Upwork</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-intro">Five builds. Each one links to its repository, and three include a video walkthrough. All data shown is test data.</p>
+
+        <article class="project" id="monitor">
+          <div class="project-head">
+            <h3>Credential Health Monitor</h3>
+            <ul class="tags"><li>Python</li><li>Docker</li><li>Slack</li><li>n8n</li><li>Zapier</li></ul>
+          </div>
+          <p>Lists every credential across n8n and Zapier, checks each one, and alerts Slack only when a credential changes health, so a known failure is never reported twice. Includes retry with backoff, secret redaction, dry-run mode and CI.</p>
+          <ol class="flow" aria-label="How the monitor works">
+            <li>List every credential in n8n and Zapier</li>
+            <li>Probe each one</li>
+            <li>Compare with the last known state</li>
+            <li>Alert Slack only on a change</li>
+          </ol>
+          <p class="links"><a href="https://github.com/Omonje/production-automation-monitor">View the repository</a></p>
+        </article>
+
+        <article class="project" id="voice">
+          <div class="project-head">
+            <h3>AI Voice Receptionist and Missed-Call Recovery</h3>
+            <ul class="tags"><li>Vapi</li><li>n8n</li><li>Cal.com</li><li>Airtable</li><li>Twilio</li></ul>
+          </div>
+          <p>Answers every call live, collects the caller's details, judges urgency, checks a real calendar and books the appointment while the caller is still on the line. If it cannot book, it tells the caller a team member will call back within the hour and logs the call.</p>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/hDQhpEWwSJE" title="Voice receptionist for an HVAC business, walkthrough" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <div class="shots">
+            <button class="shot" type="button" data-src="img/voice-receptionist-workflow.png" data-alt="The n8n workflow: live availability and booking tools called mid-call, the end-of-call report handler, and scheduled reminders."><img src="img/voice-receptionist-workflow.png" alt="The n8n workflow: live availability and booking tools called mid-call, the end-of-call report handler, and scheduled reminders." loading="lazy"><span>n8n workflow</span></button>
+            <button class="shot" type="button" data-src="img/call-log-dashboard.png" data-alt="Call-log dashboard with totals, booked and missed calls, urgency and technician assignment."><img src="img/call-log-dashboard.png" alt="Call-log dashboard with totals, booked and missed calls, urgency and technician assignment." loading="lazy"><span>Call-log dashboard</span></button>
+            <button class="shot" type="button" data-src="img/airtable-call-log.png" data-alt="The Airtable call log with caller, property address, issue, category, urgency and outcome for every call."><img src="img/airtable-call-log.png" alt="The Airtable call log with caller, property address, issue, category, urgency and outcome for every call." loading="lazy"><span>Airtable call log</span></button>
+          </div>
+          <p class="links">
+            <a href="https://github.com/Omonje/ai-voice-receptionist">View the repository</a>
+            <a href="https://harborview-call-log.lovable.app">Live call-log dashboard</a>
+            <a href="https://youtu.be/hDQhpEWwSJE">Watch on YouTube</a>
+          </p>
+        </article>
+
+        <article class="project" id="dedup">
+          <div class="project-head">
+            <h3>CRM Data Quality and Duplicate Prevention</h3>
+            <ul class="tags"><li>n8n</li><li>PostgreSQL</li><li>HubSpot</li><li>GitHub Actions</li></ul>
+          </div>
+          <p>Confidence-scored fuzzy matching finds the duplicates that exact-email matching misses. Ambiguous matches go to a human review queue, every merge keeps an audit snapshot, and bulk data movement is separate from matching so it survives CRM API rate limits. Built from real cleanup work on tens of thousands of client records.</p>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/TZ67zcXZMQY" title="CRM data cleanup walkthrough" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <div class="shots">
+            <button class="shot" type="button" data-src="img/dedup-workflow.png" data-alt="The n8n dedup workflow with its execution history."><img src="img/dedup-workflow.png" alt="The n8n dedup workflow with its execution history." loading="lazy"><span>n8n workflow</span></button>
+            <button class="shot" type="button" data-src="img/review-queue-dashboard.png" data-alt="Human review queue showing an ambiguous pair side by side with its match score, with Merge and Not a Duplicate buttons."><img src="img/review-queue-dashboard.png" alt="Human review queue showing an ambiguous pair side by side with its match score, with Merge and Not a Duplicate buttons." loading="lazy"><span>Review queue</span></button>
+            <button class="shot" type="button" data-src="img/pending-review-queue-query.png" data-alt="The dedup_review_queue table in Postgres with candidate pairs, confidence score, matched fields and decision status."><img src="img/pending-review-queue-query.png" alt="The dedup_review_queue table in Postgres with candidate pairs, confidence score, matched fields and decision status." loading="lazy"><span>Review queue table</span></button>
+            <button class="shot" type="button" data-src="img/github-action-bulk-sync.png" data-alt="A successful GitHub Action run for the bulk sync between HubSpot and Postgres."><img src="img/github-action-bulk-sync.png" alt="A successful GitHub Action run for the bulk sync between HubSpot and Postgres." loading="lazy"><span>Bulk sync run</span></button>
+          </div>
+          <p class="links">
+            <a href="https://github.com/Omonje/crm-data-quality-dedup">View the repository</a>
+            <a href="https://youtu.be/TZ67zcXZMQY">Watch on YouTube</a>
+          </p>
+        </article>
+
+        <article class="project" id="cart">
+          <div class="project-head">
+            <h3>E-commerce Cart Recovery and Lapsed Customer Win-Back</h3>
+            <ul class="tags"><li>n8n</li><li>PostgreSQL</li><li>Twilio</li></ul>
+          </div>
+          <p>Recovers abandoned carts with a sequence that escalates to SMS on the final touch, and stops the moment an order webhook shows the customer already bought. A separate win-back flow tiers lapsed customers by lifetime value. Every run can go through dry-run mode first.</p>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/uWqLXVScrWA" title="Cart recovery and win-back workflow walkthrough" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <div class="shots">
+            <button class="shot" type="button" data-src="img/cart-recovery-workflow.png" data-alt="The n8n cart recovery workflow with its execution history."><img src="img/cart-recovery-workflow.png" alt="The n8n cart recovery workflow with its execution history." loading="lazy"><span>n8n workflow</span></button>
+            <button class="shot" type="button" data-src="img/stop-on-conversion-proof.png" data-alt="After the order webhook fires, the cart row shows status converted with the order ID attached."><img src="img/stop-on-conversion-proof.png" alt="After the order webhook fires, the cart row shows status converted with the order ID attached." loading="lazy"><span>Stop on conversion</span></button>
+            <button class="shot" type="button" data-src="img/unsubscribe-proof.png" data-alt="Unsubscribe flag set to true on the cart and customer records."><img src="img/unsubscribe-proof.png" alt="Unsubscribe flag set to true on the cart and customer records." loading="lazy"><span>Unsubscribe handling</span></button>
+          </div>
+          <p class="links">
+            <a href="https://github.com/Omonje/ecommerce-cart-recovery-winback">View the repository</a>
+            <a href="https://youtu.be/uWqLXVScrWA">Watch on YouTube</a>
+          </p>
+        </article>
+
+        <article class="project" id="maintenance">
+          <div class="project-head">
+            <h3>Maintenance Request Routing</h3>
+            <ul class="tags"><li>n8n</li><li>Airtable</li><li>OpenAI</li></ul>
+          </div>
+          <p>Classifies each tenant request by category and urgency the moment it arrives, then hands it to a contractor marked available for that category and notifies both sides. If the model returns something unusable, the request defaults to General and Routine instead of stalling.</p>
+          <ol class="flow" aria-label="How request routing works">
+            <li>Tenant submits a request</li>
+            <li>Model sets category and urgency</li>
+            <li>Route to an available contractor</li>
+            <li>Notify tenant and contractor</li>
+          </ol>
+          <p class="links"><a href="https://github.com/Omonje/maintenance-request-routing">View the repository</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="wrap narrow">
+        <h2>Production experience</h2>
+        <p>My best production work belongs to a client, so I cannot show it here. What I can share is public, in a client review on Upwork:</p>
+        <ul class="facts">
+          <li>Met a target of 20 workflows a month across a 10-month retainer, and worked US business hours from Nigeria without a missed day.</li>
+          <li>Shipped 11 of the 19 projects the whole team moved to QA in one month, in about ten days.</li>
+          <li>Built a renewal and win-back system that the agency later sold to other agencies.</li>
+          <li>Cleaned up 33,000 records at one client and about 60,000 wrongly migrated records at another.</li>
+        </ul>
+        <blockquote>
+          <p>For most of that stretch she was the highest output builder on my team&hellip; If you are hiring for automation builds, CRM and AMS integration, API work or data migration, she will do the job.</p>
+          <footer>Client review, public on Upwork</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="wrap narrow">
+        <h2>How I work</h2>
+        <ul class="principles">
+          <li><strong>Code is for logic, not plumbing.</strong> Short chains stay in n8n. Anything that makes a real decision, or repeats across workflows, moves to code.</li>
+          <li><strong>Every workflow ships with retries, error alerts and a handoff document</strong> that another engineer can pick up cold.</li>
+          <li><strong>Alerts fire when something changes, not every time a check runs,</strong> so the channel stays worth reading.</li>
+        </ul>
+        <h3>Tools</h3>
+        <ul class="tags big">
+          <li>n8n</li><li>Zapier</li><li>Make</li><li>Python</li><li>PostgreSQL</li><li>Docker</li><li>Railway</li><li>REST APIs</li><li>Webhooks</li><li>OAuth</li><li>Claude and Claude Code</li><li>OpenAI</li><li>Airtable</li><li>HubSpot</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap narrow">
+        <h2>Contact</h2>
+        <p>The fastest way to reach me is email. I work US business hours from Lagos.</p>
+        <ul class="contact">
+          <li><a href="mailto:blessingomonjeva@gmail.com">blessingomonjeva@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/blessing-omonjeva-workflow-automation-specialist-work/">LinkedIn</a></li>
+          <li><a href="https://github.com/Omonje">GitHub</a></li>
+          <li><a href="https://www.upwork.com/freelancers/~0133747375c38975ec">Upwork</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><p>Blessing Omonjeva · Lagos, Nigeria</p></div>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Enlarged screenshot">
+    <button type="button" class="close" aria-label="Close">Close</button>
+    <img alt="">
+    <p class="cap"></p>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
