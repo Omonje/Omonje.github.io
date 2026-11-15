@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blessing Omonjeva | Automation Systems Engineer</title>
-  <meta name="description" content="Automation and integration engineer in Lagos, working US business hours. n8n, Zapier, Python, PostgreSQL and Claude, with monitoring built into every system.">
+  <meta name="description" content="I build the automations that move data between your CRM, billing and support tools, and the alerts that tell you when one fails. Fixed-scope offers with prices. US business hours from Lagos.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Blessing Omonjeva | Automation Systems Engineer">
-  <meta property="og:description" content="I connect CRMs, APIs and internal tools, then build the alerts that tell you the moment one stops working.">
+  <meta property="og:description" content="Your CRM, billing and support tools should not need a person to move data between them. I build the automations that do it, and the alerts that tell you when one fails.">
   <meta property="og:image" content="https://omonje.github.io/img/profile.jpg">
   <meta property="og:url" content="https://omonje.github.io/">
   <meta name="twitter:card" content="summary">
@@ -15,16 +15,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip" href="#projects">Skip to projects</a>
+  <!-- DRAFT-BANNER: delete this line before publishing -->
+  <div class="draft-banner">DRAFT, not live. Yellow items need your input before this goes out.</div>
+  <a class="skip" href="#offers">Skip to offers</a>
 
   <header class="nav">
     <div class="wrap nav-inner">
       <a class="brand" href="#top">Blessing Omonjeva</a>
       <nav aria-label="Main">
+        <a href="#offers">Offers</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Proof</a>
         <a href="#how">How I work</a>
-        <a href="#contact">Contact</a>
+        <a href="#faq">Questions</a>
+        <a href="#start">Start</a>
       </nav>
     </div>
   </header>
@@ -33,14 +37,14 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">Automation Systems Engineer · Lagos, Nigeria · US business hours</p>
-          <h1>I connect your CRMs, APIs and internal tools, then build the alerts that tell you the moment one stops working.</h1>
-          <p class="lede">Ten months as the automation builder at a US automation agency: about 20 workflows a month across n8n and Zapier, with daily production support.</p>
+          <p class="eyebrow">Automation and integration engineer · Lagos, Nigeria · US business hours</p>
+          <h1>Your CRM, billing and support tools should not need a person to move data between them.</h1>
+          <p class="lede">I build the automations that do it, and the alerts that tell you when one fails. Ten months as the automation builder at a US agency, about 20 workflows a month, with daily production support.</p>
+          <p class="for-line">For operations teams and agencies whose systems are held together by spreadsheets and copy-paste.</p>
           <div class="btn-row">
-            <a class="btn primary" href="#projects">See the projects</a>
-            <a class="btn" href="https://www.linkedin.com/in/blessing-omonjeva-workflow-automation-specialist-work/">LinkedIn</a>
-            <a class="btn" href="https://github.com/Omonje">GitHub</a>
-            <a class="btn" href="https://www.upwork.com/freelancers/~0133747375c38975ec">Upwork</a>
+            <a class="btn primary" href="#offers">See what I offer</a>
+            <a class="btn" href="#start">Book a 30-minute audit</a>
+            <a class="btn" href="#projects">See the projects</a>
           </div>
         </div>
         <img class="portrait" src="img/profile.jpg" width="320" height="320" alt="Portrait of Blessing Omonjeva">
@@ -49,30 +53,96 @@
         <ul class="stats">
           <li><strong>10 months</strong><span>at a US automation agency</span></li>
           <li><strong>About 20</strong><span>workflows shipped each month</span></li>
+          <li><strong>33,000</strong><span>records cleaned up for one client</span></li>
           <li><strong>Top Rated Plus</strong><span>on Upwork</span></li>
         </ul>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="offers" class="section">
+      <div class="wrap">
+        <h2>What you can hire me for</h2>
+        <p class="section-intro">Each offer has a fixed scope and a price on the page. If your problem does not fit one of them, book the audit call. I will tell you which one is closest, or that you do not need me.</p>
+
+        <div class="offers">
+
+          <article class="offer featured" id="offer-audit">
+            <h3>Automation audit call</h3>
+            <p class="for">For: you know something is slow or breaking, but not what to fix first.</p>
+            <ul class="gets">
+              <li>A 30-minute call about your current setup</li>
+              <li>A written summary of the call</li>
+              <li>A time and cost estimate for the fix</li>
+            </ul>
+            <div class="offer-meta"><span class="price">$40 per 30 minutes</span></div>
+            <a class="btn primary" href="#start">Book the audit</a>
+          </article>
+
+          <article class="offer" id="offer-crm">
+            <h3>CRM data cleanup</h3>
+            <p class="for">For: duplicate and wrong records are costing you deals and distorting your reports.</p>
+            <ul class="gets">
+              <li>Duplicates found, each with a confidence score</li>
+              <li>Unclear matches sent to a person to review before anything is merged</li>
+              <li>An audit snapshot of every merge</li>
+              <li>A handoff guide so your team can keep the data clean</li>
+            </ul>
+            <p class="proof">Done before: 33,000 records at one client and about 60,000 wrongly migrated records at another. <a href="#dedup">See a sample build</a>.</p>
+            <div class="offer-meta"><span class="price">From <mark class="todo">$[price]</mark></span><span><mark class="todo">[timeline]</mark></span></div>
+            <a class="btn primary" href="#start">Start a cleanup</a>
+          </article>
+
+          <article class="offer" id="offer-fix">
+            <h3>Fix broken n8n or Zapier automations</h3>
+            <p class="for">For: workflows fail without telling anyone, run twice or stop, and you find out when a customer complains.</p>
+            <ul class="gets">
+              <li>The cause found and fixed</li>
+              <li>Retries and an error alert added, so a failure reaches you</li>
+              <li>A short note on what changed and why</li>
+            </ul>
+            <p class="proof">See the alerting approach in the <a href="#monitor">credential health monitor</a>.</p>
+            <div class="offer-meta"><span class="price">From <mark class="todo">$[price]</mark></span><span><mark class="todo">[timeline]</mark></span></div>
+            <a class="btn primary" href="#start">Get it fixed</a>
+          </article>
+
+          <article class="offer" id="offer-triage">
+            <h3>AI support triage agent</h3>
+            <p class="for">For: a shared support inbox where routine questions bury the urgent ones.</p>
+            <ul class="gets">
+              <li>Each email sorted by urgency and intent</li>
+              <li>A draft reply from your own knowledge base, for a person to approve</li>
+              <li>Sensitive or unclear emails sent to a person instead of guessed at</li>
+              <li>Nothing is ever sent automatically</li>
+            </ul>
+            <p class="proof"><a href="#triage">See the working build</a> and its public code.</p>
+            <div class="offer-meta"><span class="price">From <mark class="todo">$[price]</mark></span><span><mark class="todo">[timeline]</mark></span></div>
+            <a class="btn primary" href="#start">Build my triage agent</a>
+          </article>
+
+          <article class="offer" id="offer-airtable">
+            <h3>Airtable build from scratch</h3>
+            <p class="for">For: work tracked in spreadsheets that needs real tables, automations and a dashboard.</p>
+            <ul class="gets">
+              <li>Tables, automations and one dashboard, built from scratch</li>
+              <li>A walkthrough video on every tier</li>
+            </ul>
+            <ul class="tiers">
+              <li><span>Starter, 5 tables</span><strong>$375</strong></li>
+              <li><span>Standard, 8 tables</span><strong>$750</strong></li>
+              <li><span>Advanced, 12 tables</span><strong>$1,250</strong></li>
+            </ul>
+            <div class="offer-meta"><span><mark class="todo">[timeline]</mark></span></div>
+            <a class="btn primary" href="#start">Start an Airtable build</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
       <div class="wrap">
         <h2>Projects</h2>
-        <p class="section-intro">Six builds. Each one links to its repository, and three include a video walkthrough. All data shown is test data.</p>
-
-        <article class="project" id="monitor">
-          <div class="project-head">
-            <h3>Credential Health Monitor</h3>
-            <ul class="tags"><li>Python</li><li>Docker</li><li>Slack</li><li>n8n</li><li>Zapier</li></ul>
-          </div>
-          <p>Lists every credential across n8n and Zapier, checks each one, and alerts Slack only when a credential changes health, so a known failure is never reported twice. Includes retry with backoff, secret redaction, dry-run mode and CI.</p>
-          <ol class="flow" aria-label="How the monitor works">
-            <li>List every credential in n8n and Zapier</li>
-            <li>Probe each one</li>
-            <li>Compare with the last known state</li>
-            <li>Alert Slack only on a change</li>
-          </ol>
-          <p class="links"><a href="https://github.com/Omonje/production-automation-monitor">View the repository</a></p>
-        </article>
+        <p class="section-intro">Built on test data to show how I work. Each one links to its code, and three include a video walkthrough.</p>
 
         <article class="project" id="triage">
           <div class="project-head">
@@ -89,23 +159,19 @@
           <p class="links"><a href="https://github.com/Omonje/ai-support-triage-agent">View the repository</a></p>
         </article>
 
-        <article class="project" id="voice">
+        <article class="project" id="monitor">
           <div class="project-head">
-            <h3>AI Voice Receptionist and Missed-Call Recovery</h3>
-            <ul class="tags"><li>Vapi</li><li>n8n</li><li>Cal.com</li><li>Airtable</li><li>Twilio</li></ul>
+            <h3>Credential Health Monitor</h3>
+            <ul class="tags"><li>Python</li><li>Docker</li><li>Slack</li><li>n8n</li><li>Zapier</li></ul>
           </div>
-          <p>Answers every call live, collects the caller's details, judges urgency, checks a real calendar and books the appointment while the caller is still on the line. If it cannot book, it tells the caller a team member will call back within the hour and logs the call.</p>
-          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/hDQhpEWwSJE" title="Voice receptionist for an HVAC business, walkthrough" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-          <div class="shots">
-            <button class="shot" type="button" data-src="img/voice-receptionist-workflow.png" data-alt="The n8n workflow: live availability and booking tools called mid-call, the end-of-call report handler, and scheduled reminders."><img src="img/voice-receptionist-workflow.png" alt="The n8n workflow: live availability and booking tools called mid-call, the end-of-call report handler, and scheduled reminders." loading="lazy"><span>n8n workflow</span></button>
-            <button class="shot" type="button" data-src="img/call-log-dashboard.png" data-alt="Call-log dashboard with totals, booked and missed calls, urgency and technician assignment."><img src="img/call-log-dashboard.png" alt="Call-log dashboard with totals, booked and missed calls, urgency and technician assignment." loading="lazy"><span>Call-log dashboard</span></button>
-            <button class="shot" type="button" data-src="img/airtable-call-log.png" data-alt="The Airtable call log with caller, property address, issue, category, urgency and outcome for every call."><img src="img/airtable-call-log.png" alt="The Airtable call log with caller, property address, issue, category, urgency and outcome for every call." loading="lazy"><span>Airtable call log</span></button>
-          </div>
-          <p class="links">
-            <a href="https://github.com/Omonje/ai-voice-receptionist">View the repository</a>
-            <a href="https://harborview-call-log.lovable.app">Live call-log dashboard</a>
-            <a href="https://youtu.be/hDQhpEWwSJE">Watch on YouTube</a>
-          </p>
+          <p>Lists every credential across n8n and Zapier, checks each one, and alerts Slack only when a credential changes health, so a known failure is never reported twice. Includes retry with backoff, secret redaction, dry-run mode and CI.</p>
+          <ol class="flow" aria-label="How the monitor works">
+            <li>List every credential in n8n and Zapier</li>
+            <li>Probe each one</li>
+            <li>Compare with the last known state</li>
+            <li>Alert Slack only on a change</li>
+          </ol>
+          <p class="links"><a href="https://github.com/Omonje/production-automation-monitor">View the repository</a></p>
         </article>
 
         <article class="project" id="dedup">
@@ -127,44 +193,36 @@
           </p>
         </article>
 
-        <article class="project" id="cart">
+        <article class="project" id="voice">
           <div class="project-head">
-            <h3>E-commerce Cart Recovery and Lapsed Customer Win-Back</h3>
-            <ul class="tags"><li>n8n</li><li>PostgreSQL</li><li>Twilio</li></ul>
+            <h3>AI Voice Receptionist and Missed-Call Recovery</h3>
+            <ul class="tags"><li>Vapi</li><li>n8n</li><li>Cal.com</li><li>Airtable</li><li>Twilio</li></ul>
           </div>
-          <p>Recovers abandoned carts with a sequence that escalates to SMS on the final touch, and stops the moment an order webhook shows the customer already bought. A separate win-back flow tiers lapsed customers by lifetime value. Every run can go through dry-run mode first.</p>
-          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/uWqLXVScrWA" title="Cart recovery and win-back workflow walkthrough" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <p>Answers every call live, collects the caller's details, judges urgency, checks a real calendar and books the appointment while the caller is still on the line. If it cannot book, it tells the caller a team member will call back within the hour and logs the call.</p>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/hDQhpEWwSJE" title="Voice receptionist for an HVAC business, walkthrough" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
           <div class="shots">
-            <button class="shot" type="button" data-src="img/cart-recovery-workflow.png" data-alt="The n8n cart recovery workflow with its execution history."><img src="img/cart-recovery-workflow.png" alt="The n8n cart recovery workflow with its execution history." loading="lazy"><span>n8n workflow</span></button>
-            <button class="shot" type="button" data-src="img/stop-on-conversion-proof.png" data-alt="After the order webhook fires, the cart row shows status converted with the order ID attached."><img src="img/stop-on-conversion-proof.png" alt="After the order webhook fires, the cart row shows status converted with the order ID attached." loading="lazy"><span>Stop on conversion</span></button>
-            <button class="shot" type="button" data-src="img/unsubscribe-proof.png" data-alt="Unsubscribe flag set to true on the cart and customer records."><img src="img/unsubscribe-proof.png" alt="Unsubscribe flag set to true on the cart and customer records." loading="lazy"><span>Unsubscribe handling</span></button>
+            <button class="shot" type="button" data-src="img/voice-receptionist-workflow.png" data-alt="The n8n workflow: live availability and booking tools called mid-call, the end-of-call report handler, and scheduled reminders."><img src="img/voice-receptionist-workflow.png" alt="The n8n workflow: live availability and booking tools called mid-call, the end-of-call report handler, and scheduled reminders." loading="lazy"><span>n8n workflow</span></button>
+            <button class="shot" type="button" data-src="img/call-log-dashboard.png" data-alt="Call-log dashboard with totals, booked and missed calls, urgency and technician assignment."><img src="img/call-log-dashboard.png" alt="Call-log dashboard with totals, booked and missed calls, urgency and technician assignment." loading="lazy"><span>Call-log dashboard</span></button>
+            <button class="shot" type="button" data-src="img/airtable-call-log.png" data-alt="The Airtable call log with caller, property address, issue, category, urgency and outcome for every call."><img src="img/airtable-call-log.png" alt="The Airtable call log with caller, property address, issue, category, urgency and outcome for every call." loading="lazy"><span>Airtable call log</span></button>
           </div>
           <p class="links">
-            <a href="https://github.com/Omonje/ecommerce-cart-recovery-winback">View the repository</a>
-            <a href="https://youtu.be/uWqLXVScrWA">Watch on YouTube</a>
+            <a href="https://github.com/Omonje/ai-voice-receptionist">View the repository</a>
+            <a href="https://harborview-call-log.lovable.app">Live call-log dashboard</a>
+            <a href="https://youtu.be/hDQhpEWwSJE">Watch on YouTube</a>
           </p>
         </article>
 
-        <article class="project" id="maintenance">
-          <div class="project-head">
-            <h3>Maintenance Request Routing</h3>
-            <ul class="tags"><li>n8n</li><li>Airtable</li><li>OpenAI</li></ul>
-          </div>
-          <p>Classifies each tenant request by category and urgency the moment it arrives, then hands it to a contractor marked available for that category and notifies both sides. If the model returns something unusable, the request defaults to General and Routine instead of stalling.</p>
-          <ol class="flow" aria-label="How request routing works">
-            <li>Tenant submits a request</li>
-            <li>Model sets category and urgency</li>
-            <li>Route to an available contractor</li>
-            <li>Notify tenant and contractor</li>
-          </ol>
-          <p class="links"><a href="https://github.com/Omonje/maintenance-request-routing">View the repository</a></p>
-        </article>
+        <h3 class="also-title">Also built</h3>
+        <ul class="facts also">
+          <li><strong>E-commerce cart recovery and win-back</strong> (n8n, PostgreSQL, Twilio). Escalates to SMS on the final touch and stops the moment an order comes in. <a href="https://github.com/Omonje/ecommerce-cart-recovery-winback">Repository</a> · <a href="https://youtu.be/uWqLXVScrWA">Video</a></li>
+          <li><strong>Maintenance request routing</strong> (n8n, Airtable, OpenAI). Classifies each request and routes it to an available contractor. <a href="https://github.com/Omonje/maintenance-request-routing">Repository</a></li>
+        </ul>
       </div>
     </section>
 
-    <section id="experience" class="section alt">
+    <section id="experience" class="section">
       <div class="wrap narrow">
-        <h2>Production experience</h2>
+        <h2>Proof from client work</h2>
         <p>My best production work belongs to a client, so I cannot show it here. What I can share is public, in a client review on Upwork:</p>
         <ul class="facts">
           <li>Met a target of 20 workflows a month across a 10-month retainer, and worked US business hours from Nigeria without a missed day.</li>
@@ -179,13 +237,14 @@
       </div>
     </section>
 
-    <section id="how" class="section">
+    <section id="how" class="section alt">
       <div class="wrap narrow">
         <h2>How I work</h2>
         <ul class="principles">
           <li><strong>Code is for logic, not plumbing.</strong> Short chains stay in n8n. Anything that makes a real decision, or repeats across workflows, moves to code.</li>
-          <li><strong>Every workflow ships with retries, error alerts and a handoff document</strong> that another engineer can pick up cold.</li>
+          <li><strong>Every build ships with retries, error alerts and two handoff documents.</strong> One is technical, so another engineer can pick it up cold. The other is in plain language, for whoever runs it day to day.</li>
           <li><strong>Alerts fire when something changes, not every time a check runs,</strong> so the channel stays worth reading.</li>
+          <li><strong>A person approves anything risky.</strong> Agents draft and sort. They do not send, delete or merge on their own.</li>
         </ul>
         <h3>Tools</h3>
         <ul class="tags big">
@@ -194,14 +253,47 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section id="faq" class="section">
       <div class="wrap narrow">
-        <h2>Contact</h2>
-        <p>The fastest way to reach me is email. I work US business hours from Lagos.</p>
+        <h2>Questions people ask</h2>
+        <details class="faq">
+          <summary>Do you work in my time zone?</summary>
+          <p>I work US business hours from Lagos. My longest client review covers ten months with no missed day.</p>
+        </details>
+        <details class="faq">
+          <summary>What if my problem is not on the list?</summary>
+          <p>Book the audit call. I will tell you which offer is closest, or whether a simpler tool already solves it and you do not need me.</p>
+        </details>
+        <details class="faq">
+          <summary>What happens if something breaks after you hand it over?</summary>
+          <p>Every build ships with retries and an error alert, so a failure reaches you instead of staying hidden. <mark class="todo">[Add your support terms: how long you fix issues for free, and what a follow-up costs.]</mark></p>
+        </details>
+        <details class="faq">
+          <summary>Who owns the automations, and how do you handle my logins?</summary>
+          <p><mark class="todo">[Add your answer: for example, that everything is built in your own accounts, and how you ask for access.]</mark></p>
+        </details>
+        <details class="faq">
+          <summary>How does payment work?</summary>
+          <p>Through Upwork. Upwork holds the payment until you approve the work.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="start" class="section alt">
+      <div class="wrap narrow">
+        <h2>How to start</h2>
+        <ol class="steps">
+          <li><strong>Pick an offer,</strong> or book the audit call if you are not sure which one fits.</li>
+          <li><strong>I confirm the scope, price and date in writing</strong> before you pay anything.</li>
+          <li><strong>I build and test it,</strong> then hand over the two documents and show you how it works.</li>
+        </ol>
+        <div class="btn-row">
+          <a class="btn primary" href="https://www.upwork.com/freelancers/~0133747375c38975ec">Book the audit call on Upwork</a>
+          <a class="btn" href="mailto:blessingomonjeva@gmail.com">Email me instead</a>
+        </div>
         <ul class="contact">
           <li><a href="mailto:blessingomonjeva@gmail.com">blessingomonjeva@gmail.com</a></li>
           <li><a href="https://www.linkedin.com/in/blessing-omonjeva-workflow-automation-specialist-work/">LinkedIn</a></li>
-          <li><a href="https://github.com/Omonje">GitHub</a></li>
           <li><a href="https://www.upwork.com/freelancers/~0133747375c38975ec">Upwork</a></li>
         </ul>
       </div>
