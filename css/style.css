@@ -90,20 +90,14 @@ h3 { font-size: 1.25rem; margin: 0; }
 
 /* Offers */
 .for-line { margin: -8px 0 24px; color: var(--ink); font-weight: 500; max-width: 60ch; }
-.offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 20px; }
+.offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 20px; }
 .offer { border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; background: #fff; display: flex; flex-direction: column; gap: 14px; }
 .offer.featured { border-color: var(--teal); box-shadow: 0 6px 20px rgba(15, 118, 110, 0.12); }
 .offer .for { margin: 0; color: var(--muted); }
 .offer .gets { margin: 0; padding-left: 20px; }
 .offer .gets li { margin-bottom: 6px; }
 .offer .proof { margin: 0; font-size: 0.95rem; color: var(--muted); }
-.offer-meta { display: flex; gap: 6px 18px; flex-wrap: wrap; align-items: baseline; border-top: 1px solid var(--line); padding-top: 12px; margin-top: auto; }
-.price { font-weight: 700; color: var(--teal-dark); font-size: 1.15rem; }
 .offer .btn { text-align: center; }
-.tiers { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.tiers li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 14px; font-size: 15px; }
-.tiers li + li { border-top: 1px solid var(--line); }
-.tiers strong { color: var(--teal-dark); }
 .also-title { margin: 36px 0 12px; }
 .also { margin-top: 0; }
 
@@ -116,9 +110,6 @@ details.faq summary { cursor: pointer; font-weight: 600; padding: 14px 0; }
 details.faq[open] summary { color: var(--teal-dark); }
 details.faq p { margin: 0 0 14px; color: var(--muted); }
 
-/* Draft only: remove with the banner before publishing */
-.draft-banner { background: #fef08a; color: #713f12; text-align: center; font-size: 14px; font-weight: 600; padding: 6px 12px; }
-mark.todo { background: #fef08a; color: #713f12; padding: 0 4px; border-radius: 4px; font-weight: 600; }
 
 /* Experience, how */
 .facts, .principles { padding-left: 20px; }
