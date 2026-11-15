@@ -57,7 +57,7 @@
     <section id="projects" class="section">
       <div class="wrap">
         <h2>Projects</h2>
-        <p class="section-intro">Five builds. Each one links to its repository, and three include a video walkthrough. All data shown is test data.</p>
+        <p class="section-intro">Six builds. Each one links to its repository, and three include a video walkthrough. All data shown is test data.</p>
 
         <article class="project" id="monitor">
           <div class="project-head">
@@ -72,6 +72,21 @@
             <li>Alert Slack only on a change</li>
           </ol>
           <p class="links"><a href="https://github.com/Omonje/production-automation-monitor">View the repository</a></p>
+        </article>
+
+        <article class="project" id="triage">
+          <div class="project-head">
+            <h3>AI Support Triage Agent</h3>
+            <ul class="tags"><li>Python</li><li>FastAPI</li><li>Gmail API</li><li>monday.com</li><li>Supabase</li><li>Claude</li><li>Groq</li></ul>
+          </div>
+          <p>Reads each support email from a dedicated Gmail label, sets its urgency and intent, finds the answer in a knowledge base and saves a reply as a Gmail draft for a person to approve. Anything sensitive or low-confidence goes to a person instead of being guessed at, and nothing is ever sent automatically. The model provider switches between Claude, Gemini and Groq with one setting.</p>
+          <ol class="flow" aria-label="How the triage agent works">
+            <li>Read each new email from a Gmail label</li>
+            <li>Set its urgency and intent</li>
+            <li>Find the answer in the knowledge base</li>
+            <li>Save a draft reply and log it to monday.com, or escalate to a person</li>
+          </ol>
+          <p class="links"><a href="https://github.com/Omonje/ai-support-triage-agent">View the repository</a></p>
         </article>
 
         <article class="project" id="voice">
